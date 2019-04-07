@@ -4,4 +4,4 @@ pynacl<=1.0.1
 jishaku
 wheel
 pymongo
-os
+
