@@ -9,7 +9,7 @@ mongoURI = "mongodb://localhost:27017/"
 dbClient = MongoClient(mongoURI)
 
 def get_prefix(bot, msg):
-    prefixes = [")", "p."]
+    prefixes = [")"]
 
     return commands.when_mentioned_or(*prefixes)(bot, msg)
 
