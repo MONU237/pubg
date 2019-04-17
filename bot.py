@@ -14,7 +14,7 @@ def get_prefix(bot, msg):
     return commands.when_mentioned_or(*prefixes)(bot, msg)
 
 bot = commands.Bot(command_prefix=get_prefix, description="A Discord Bot To Make Teams")
-bot.command('help')
+bot.remove_command('help')
 
 bot.db = dbClient["pubg_bot"]
 
